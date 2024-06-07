@@ -6,7 +6,7 @@
 }
 
 main {
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
   background-image: url("../assests/background.png");
   display: flex;
@@ -37,14 +37,9 @@ main {
 
 #wedding-date-box {
   position: absolute;
-  top: 4em;
-}
-
-#wedding-date-title {
-  font-size: 10vw;
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Encode Sans Semi Expanded", sans-serif;
+  color: aliceblue;
+  top: 26%;
+  width: 100%;
 }
 
 #wedding-date-day {
@@ -52,6 +47,15 @@ main {
   font-weight: 300;
   font-style: normal;
   font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-size: clamp(1.8em, 7vw, 4em);
+}
+
+#wedding-date-title {
+  font-size: 10vw;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-size: clamp(2em, 8vw, 4.5em);
 }
 
 #tile-first-row {
@@ -186,24 +190,13 @@ nav>ul>a>li {
 }
 
 @media (min-width: 576px) {
-
   #wedding-date-box {
-    position: absolute;
-    top: 4em;
+    top: 35%;
   }
+}
 
-  #wedding-date-title {
-    font-size: 5em;
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-weight: 400;
-  }
-
-  #wedding-date-day {
-    font-size: 3.5em;
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+@media (max-width: 330px) {
+  #wedding-date-box {
+    top: 15%;
   }
 }

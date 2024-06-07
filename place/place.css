@@ -90,6 +90,7 @@ nav>a {
 
 .text-card1>h1 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-bottom: .5em;
@@ -97,12 +98,17 @@ nav>a {
   font-weight: bolder;
   font-style: normal;
   font-family: "Encode Sans Semi Expanded", sans-serif;
+  padding: 0 .5em;
 }
 
 #calendar-icon,
-#clock-icon,
-#location-icon {
+#clock-icon {
   margin-right: .5em;
+}
+
+#location-icon {
+  margin-left: .6em;
+  padding: 0;
 }
 
 .text-card1>a {
