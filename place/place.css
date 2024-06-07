@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  background-position: center top;
+  background-size: contain;
+  flex-direction: column;
+  background-image: url("../assests/background.png");
+}
+
+nav {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav>p {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+nav>a {
+  color: #E5D9B5;
+}
+
+#home-icon {
+  padding: .1em;
+  font-size: 2.5em;
+  border-radius: .2em;
+  background-color: #375F7C;
+}
+
+#img-section {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  border-radius: .3em;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.253);
+  background-color: #F7FAFD;
+  position: relative;
+}
+
+.card1 {
+  width: 100%;
+  padding: 1.5em;
+  margin: 1em 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../assests/signleTile.png");
+  background-color: #DFE8FE;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.253);
+}
+
+.text-card1 {
+  padding: 1em .2em;
+  border: .1em solid #375F7C;
+  background-color: #dfe8feef;
+}
+
+.text-card1>p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: .9em;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: .4em;
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+.text-card1>h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: .5em;
+  font-size: 1em;
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+#calendar-icon,
+#clock-icon,
+#location-icon {
+  margin-right: .5em;
+}
+
+.text-card1>a {
+  margin-top: 2em;
+  font-size: .8em;
+  font-style: normal;
+  font-weight: bolder;
+  text-decoration: underline;
+  word-wrap: break-word;
+  cursor: pointer;
+  color: black;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+#card2 {
+  margin-bottom: 2em;
+}
+
+article {
+  margin: 1.5em 0em;
+}
+
+#singleTile2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 8%;
+  position: absolute;
+}
+
+.places {
+  width: 100%;
+  margin: .5em 0 2em 0;
+}
+
+@media (min-width: 576px) {
+  main {
+    background-size: 48%;
+  }
+}
+
+@media (min-width: 34s0px) {
+  nav>p {
+    font-size: 2em;
+  }
+}

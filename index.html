@@ -1,7 +1,81 @@
 <!DOCTYPE html>
-<html>
-<body style="background-image: url('azulejos2.jpg'); background-size: cover;">
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300;400&family=Encode+Sans+Semi+Expanded:wght@300;400&display=swap"
+    rel="stylesheet">
+  <title>Ola & Wiktor</title>
+</head>
+
+<body>
+  <main>
+    <section id="text-section">
+      <img id="heroImage" src="../assests/heroImage.png" alt="" srcset="">
+      <div id="wedding-date-box">
+        <p id="wedding-date-title">OLA <br> & <br>WIKTOR</p>
+        <p id="wedding-date-day">6 lipca 2023</p>
+      </div>
+      <section id="tile-first-row">
+        <img class="turn-tiles" id="tile1" src="../assests/tile1.png" alt="tile-1">
+        <img class="turn-tiles" id="tile2" src="../assests/tile2.png" alt="tile-2">
+        <img class="turn-tiles" id="tile3" src="../assests/tile3.png" alt="tile-3">
+      </section>
+      <article>Witajcie Ci, którzy tu zajrzeli! <br>
+        Bardzo się cieszymy, że już niedługo się spotkamy. <br>
+        Już nie możemy się doczekać, a zostało już tylko:
+      </article>
+      <ul id="count-down-timer">
+        <label for="days-left">
+          <li id="days-left">
+          </li>
+          <p>Dni</p>
+        </label>
+        <p>:</p>
+        <label for="hours-left">
+          <li id="hours-left">
+          </li>
+          <p>Godzin</p>
+        </label>
+        <p>:</p>
+        <label for="minutes-left">
+          <li id="minutes-left">
+          </li>
+          <p>Minut</p>
+        </label>
+        <p>:</p>
+        <label for="seconds-left">
+          <li id="seconds-left">
+          </li>
+          <p>Sekund</p>
+        </label>
+      </ul>
+      <section id="tile-second-row">
+        <img class="turn-tiles" id="tile4" src="../assests/tile4.png" alt="tile-4">
+        <img class="turn-tiles" id="tile5" src="../assests/tile5.png" alt="tile-5">
+        <img class="turn-tiles" id="tile6" src="../assests/tile6.png" alt="tile-6">
+      </section>
+      <nav>
+        <ul>
+          <a href="./place/place.html">
+            <li>JAK DOJECHAĆ?</li>
+          </a>
+          <a href="./plan/plan.html">
+            <li>PLAN WESELA</li>
+          </a>
+          <a href="./menu/menu.html">
+            <li>MENU</li>
+          </a>
+        </ul>
+      </nav>
+    </section>
+  </main>
+  <script src="./main.js"></script>
 </body>
+
 </html>
