@@ -18,7 +18,7 @@ const seconds = document.querySelector("#seconds-left");
 
 const countDown = (duration) => {
   days.innerText = Math.floor(duration / (1000 * 60 * 60 * 24));
-  hours.innerText = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + 2;
+  hours.innerText = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   minutes.innerText = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
   seconds.innerText = Math.floor((duration % (1000 * 60)) / 1000);
 };

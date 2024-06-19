@@ -14,7 +14,7 @@ main {
   background-position: center top;
   background-size: contain;
   flex-direction: column;
-  background-image: url("../assests/background.png");
+  background-image: url("../../assests/background.png");
 }
 
 nav {
@@ -27,10 +27,11 @@ nav {
 }
 
 nav>p {
-  font-size: 1.5em;
+  font-size: .5em;
   font-weight: 300;
   font-style: normal;
   font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-size: clamp(.8em, 5vw, 4em);
 }
 
 nav>a {
@@ -65,7 +66,7 @@ nav>a {
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../assests/signleTile.png");
+  background-image: url("../../assests/signleTile.png");
   background-color: #DFE8FE;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.253);
 }
@@ -74,6 +75,8 @@ nav>a {
   padding: 1em .2em;
   border: .1em solid #375F7C;
   background-color: #dfe8feef;
+  text-align: center;
+  position: relative;
 }
 
 .text-card1>p {
@@ -86,29 +89,26 @@ nav>a {
   font-style: normal;
   margin-bottom: .4em;
   font-family: "Encode Sans Condensed", sans-serif;
+  z-index: 2;
+  position: relative;
 }
+
 
 .text-card1>h1 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding-bottom: .5em;
-  font-size: 1em;
-  font-weight: bolder;
-  font-style: normal;
-  font-family: "Encode Sans Semi Expanded", sans-serif;
-  padding: 0 .5em;
+  justify-content: center;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 800;
+  font-size: clamp(.6em, 3.2vw, 2em);
+  z-index: 2;
+  position: relative;
 }
 
 #calendar-icon,
 #clock-icon {
-  margin-right: .5em;
-}
-
-#location-icon {
-  margin-left: .6em;
-  padding: 0;
+  margin-right: .3em;
 }
 
 .text-card1>a {
@@ -121,10 +121,25 @@ nav>a {
   cursor: pointer;
   color: black;
   font-family: "Encode Sans Semi Expanded", sans-serif;
+  z-index: 2;
 }
 
-#card2 {
-  margin-bottom: 2em;
+#link1 {
+  max-width: 25em;
+  font-size: 1em;
+  padding: .4em 2em;
+  margin-top: 1.2em;
+  border-radius: .3em;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #F7FAFD;
+  background-color: #385F7C;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.276);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
 }
 
 article {
@@ -137,6 +152,7 @@ article {
   transform: translate(-50%, -50%);
   opacity: 8%;
   position: absolute;
+  z-index: 0;
 }
 
 .places {
@@ -144,14 +160,18 @@ article {
   margin: .5em 0 2em 0;
 }
 
-@media (min-width: 576px) {
-  main {
-    background-size: 48%;
+@media (min-width: 548px) {
+  nav>p {
+    font-size: 2em;
+  }
+
+  .text-card1>h1 {
+    font-size: 1.2em;
   }
 }
 
-@media (min-width: 34s0px) {
-  nav>p {
-    font-size: 2em;
+@media (min-width: 576px) {
+  main {
+    background-size: 48%;
   }
 }
