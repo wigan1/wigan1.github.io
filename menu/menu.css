@@ -13,9 +13,10 @@ main {
   align-items: center;
   background-position: center top;
   background-size: contain;
+  background-repeat: repeat;
   flex-direction: column;
   padding: 1.5em 1.5em 1.5em 1.5em;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #text-section {
@@ -30,7 +31,7 @@ main {
   border-radius: .3em;
   background-color: #F7FAFD;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.253);
-  height: 90svh;
+
 }
 
 nav {
@@ -59,4 +60,9 @@ nav>a {
   font-size: 2.5em;
   border-radius: .2em;
   background-color: #375F7C;
+}
+
+.menu {
+  width: 100%;
+  max-width: 480px;
 }
