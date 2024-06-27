@@ -66,3 +66,10 @@ nav>a {
   width: 100%;
   max-width: 480px;
 }
+
+.menu1 {
+  width: 100%;
+  max-width: 480px;
+  border-top: .8em solid #f5f8f3;
+
+}
